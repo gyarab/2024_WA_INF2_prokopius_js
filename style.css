@@ -7,9 +7,7 @@ body {
     margin: 0;
 }
 
-#app {
-    text-align: center;
-}
+
 
 .board {
     display: grid;
@@ -28,6 +26,8 @@ body {
     border: 2px solid #ccc;
     cursor: pointer;
     user-select: none;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
 }
 
 .card.flipped, .card.matched {
@@ -44,4 +44,3 @@ button {
     padding: 10px 20px;
     font-size: 16px;
 }
-
